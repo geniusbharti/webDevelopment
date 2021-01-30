@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  .card{
+    width: 22%;
+    text-align: center;
+    margin: auto;
+    background-image: url("bg-pattern-card.svg");
+    background-size: 100% 95px;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    padding: 3px;
+    border-radius: 6%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+  }
+  .dark-color{
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .profile{
+    padding: 45px 0 20px 0;
+        }
+  .light-color{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+  }
+ .London{
+   font-weight: 400;
+   color: hsl(0, 0%, 59%);
+   font-size: 18px;
+ }
+ body{
+   font-family: 'Kumbh Sans', sans-serif;
+   background-image: url("bg-pattern-bottom.svg");
+   background-image: url("bg-pattern-top.svg");
+   background-color: #73c2fb;
+   margin: 0;
+ }
+img{
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    border: 5px solid #fff;
+  }
+span{
+    padding: 10px;
+  }
+table{
+  margin: auto;
+}
+td{
+   padding: 5px 10px;
+ }
+ @media only screen and (max-width: 992px){
+   .card{
+     width: 30%;
+   }
+ }
+ @media only screen and (max-width: 703px){
+   .card{
+     width: 40%;
+   }
+ }
+  </style>
+</head>
+<body>
+  <div class="card">
+  <img src="image-victor.jpg" alt="victor-img">
+  <div class="profile">
+    <p class="dark-color">Victor Crest<span class="London">26</span></p>
+    <p class="London">London</p>
+    <hr style="border-style:none; border-top-style: solid; color:	#DCDCDC;height:1px;">
+  </div>
+<div class="about">
+  <table class="table">
+    <tr>
+      <td class="dark-color">80K</td>
+      <td class="dark-color">803K</td>
+      <td class="dark-color">1.4K</td>
+    </tr>
+    <tr>
+      <td class="light-color">Followers</td>
+      <td class="light-color">Likes</td>
+      <td class="light-color">Photos</td>
+    </tr>
+  </table>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">GeniusBharti</a>.
+  </div>
+</body>
+</html>
